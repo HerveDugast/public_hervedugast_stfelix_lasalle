@@ -1,0 +1,1 @@
+Pyreverse -o png -p CCarnivore_CHerbivore -A -S -my -f ALL CCarnivore.py CHerbivore.py

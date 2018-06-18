@@ -1,0 +1,59 @@
+{\rtf1\ansi\deff0\deftab360
+
+{\fonttbl
+{\f000 Courier New;}
+{\f001 Courier New;}
+{\f002 Courier New;}
+{\f003 Courier New;}
+{\f004 Courier New;}
+{\f005 Courier New;}
+{\f006 Courier New;}
+{\f007 Courier New;}
+{\f008 Courier New;}
+{\f009 Courier New;}
+}
+
+{\colortbl
+\red000\green000\blue000;
+\red255\green255\blue255;
+\red000\green128\blue000;
+\red255\green255\blue255;
+\red128\green128\blue128;
+\red255\green255\blue255;
+\red000\green000\blue255;
+\red255\green255\blue255;
+\red255\green128\blue000;
+\red255\green255\blue255;
+\red000\green000\blue000;
+\red255\green255\blue255;
+\red255\green000\blue255;
+\red255\green255\blue255;
+\red000\green000\blue128;
+\red255\green255\blue255;
+\red000\green000\blue000;
+\red255\green255\blue255;
+\red000\green000\blue000;
+\red255\green255\blue255;
+}
+
+\f5505089\fs20\cb19\cf18 \highlight3\cf2 #!/usr/bin/python3.4\highlight1\cf0 \par
+\highlight3\cf2 # coding: utf-8\highlight1\cf0 \par
+\highlight9\cf8 """\par
+Programme (classe) : CCarnivore.py     version 1.0\par
+Date : 12-03-2018\par
+Auteur : Herv\u233? Dugast\par
+"""\highlight1\cf0 \par
+\highlight7\cf6\b from\highlight1\cf0\b0  \highlight17\cf16 CAnimal\highlight1\cf0  \highlight7\cf6\b import\highlight1\cf0\b0  \highlight17\cf16 CAnimal\highlight1\cf0 \par
+\par
+\highlight7\cf6\b class\highlight1\cf0\b0  \highlight11\cf10\b CCarnivore\highlight15\cf14 (\highlight17\cf16\b0 CAnimal\highlight15\cf14\b ):\highlight1\cf0\b0 \par
+   \par
+   \highlight7\cf6\b def\highlight1\cf0\b0  \highlight13\cf12 __init__\highlight15\cf14\b (\highlight17\cf16\b0 self\highlight15\cf14\b ):\highlight1\cf0\b0 \par
+      \highlight17\cf16 super\highlight15\cf14\b ().\highlight17\cf16\b0 __init__\highlight15\cf14\b ()\highlight1\cf0\b0 \par
+      \highlight17\cf16 self\highlight15\cf14\b .\highlight17\cf16\b0 __armeAttaque\highlight1\cf0  \highlight15\cf14\b =\highlight1\cf0\b0  \highlight17\cf16 input\highlight15\cf14\b (\highlight5\cf4\b0 "Arme attaque ? "\highlight15\cf14\b )\highlight1\cf0\b0 \par
+      \par
+   \highlight7\cf6\b def\highlight1\cf0\b0  \highlight13\cf12 manger\highlight15\cf14\b (\highlight17\cf16\b0 self\highlight15\cf14\b ):\highlight1\cf0\b0 \par
+      \highlight9\cf8 """ Affiche le repas habituel\par
+      """\highlight1\cf0 \par
+      \highlight7\cf6\b print\highlight15\cf14 (\highlight5\cf4\b0 "\{\} tue avec \{\} pour manger d'autres animaux !"\highlight1\cf0  \\\par
+           \highlight15\cf14\b .\highlight17\cf16\b0 format\highlight15\cf14\b (\highlight17\cf16\b0 self\highlight15\cf14\b .\highlight17\cf16\b0 _nom\highlight15\cf14\b .\highlight17\cf16\b0 upper\highlight15\cf14\b (),\highlight1\cf0\b0  \highlight17\cf16 self\highlight15\cf14\b .\highlight17\cf16\b0 __armeAttaque\highlight15\cf14\b .\highlight17\cf16\b0 upper\highlight15\cf14\b ()))\highlight1\cf0\b0 \par
+}

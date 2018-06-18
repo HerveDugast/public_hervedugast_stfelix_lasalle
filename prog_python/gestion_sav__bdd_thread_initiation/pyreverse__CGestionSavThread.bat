@@ -1,0 +1,1 @@
+Pyreverse -o png -p CGestionSavThread -A -S -my -f ALL CGestionSavThread.py

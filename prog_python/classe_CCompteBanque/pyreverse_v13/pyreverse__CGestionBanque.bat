@@ -1,0 +1,1 @@
+Pyreverse -o png -p CGestionBanque -A -S -my -f ALL CGestionBanque.py

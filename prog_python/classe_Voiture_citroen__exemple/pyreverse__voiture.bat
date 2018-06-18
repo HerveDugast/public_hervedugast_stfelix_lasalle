@@ -1,0 +1,1 @@
+Pyreverse -o png -p voiture -A -S -my -f ALL voiture.py

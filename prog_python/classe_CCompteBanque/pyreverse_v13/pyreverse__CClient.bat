@@ -1,0 +1,1 @@
+Pyreverse -o png -p CClient -A -S -my -f ALL CClient.py

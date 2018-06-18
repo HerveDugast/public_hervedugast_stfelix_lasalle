@@ -1,0 +1,21 @@
+---------------------------------
+Paramètres connexion Filezilla
+Hôte : 192.168.0.54
+Port : 2222
+identifiant : pi
+passe : password
+---------------------------------
+Paramètres connexion Filezilla
+Hôte : 192.168.0.54
+Port : 2222
+identifiant : root
+passe : a..8
+---------------------------------
+Paramètres connexion base de données dbsupervisor
+http://217.128.90.45:8044/phpmyadmin
+
+host : 217.128.90.45
+port : 3306
+user : supervisor
+password : Nantes44
+database : dbsupervis

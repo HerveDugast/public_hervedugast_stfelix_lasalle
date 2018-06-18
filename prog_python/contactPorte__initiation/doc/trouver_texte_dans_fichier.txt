@@ -1,0 +1,3 @@
+pi@raspi3-sup:/usr/lib/python3/dist-packages/gpiozero $ grep -r "class Button" * 
+boards.py:class ButtonBoard(HoldMixin, CompositeDevice):
+input_devices.py:class Button(HoldMixin, DigitalInputDevice):

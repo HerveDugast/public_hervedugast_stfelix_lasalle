@@ -1,0 +1,2 @@
+http://sametmax.com/ecrire-des-logs-en-python/
+Le script tuto_logging.py vient du document "Écrire des logs en Python _ Sam & Max.pdf"

@@ -1,0 +1,29 @@
+---------- Installation de modules python sous windows ----------
+H. Dugast      07-04-2017        version 1.1
+
+- décompresser avec 7zip (2 couches) le fichier : pylint-1.8.2.tar.gz
+
+- C:\Python34>pip3 install pylint
+
+- installation sous windows : graphviz-2.38.msi
+
+- modifier variable environnement système : path
+	ajouter C:\Program Files (x86)\Graphviz2.38\bin
+	
+- redémarrer PC
+
+- C:\Python34>path
+PATH=C:\Python34\;C:\Python34\Scripts;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\PuTTY\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\AMD\ATI.ACE\Core-Static;C:\Program Files (x86)\Calibre2\;C:\Program Files (x86)\PuTTY\;C:\prog_portable\jhash__portable;C:\Program Files (x86)\Graphviz2.38\bin;C:\Users\installateur\AppData\Local\Microsoft\WindowsApps;C:\Users\installateur\AppData\Local\GitHubDesktop\bin
+*** vérifier la présence du chemin de graphviz dans le chemin ***
+
+- C:\Python34>dot -Txxx
+Format: "xxx" not recognized. Use one of: bmp canon cmap cmapx cmapx_np dot emf emfplus eps fig gd gd2 gif gv imap imap_np ismap jpe jpeg jpg metafile pdf pic plain plain-ext png pov ps ps2 svg svgz tif tiff tk vml vmlz vrml wbmp xdot xdot1.2 xdot1.4
+*** cela vérifie que le path et graphviz-2 fonctionne bien ***
+
+- C:\Python34>Pyreverse -o png D:\prog\python\voiture\citroen_DS.py
+*** génère le fichier classes.png contenant l'image du diagramme de classe ***
+
+- Copier tous les fichiers .py dans C:\Python34 (ou ajouter le chemin des programmes dans le path Windows... non testé)
+
+- C:\Python34>Pyreverse -o png -p citroen_ds -A -S -my -f ALL citroen_ds.py
+*** vous obtenez un fichier classes_citroen_ds.png dans C:\Python34 représentant le diagramme de classe ***

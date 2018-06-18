@@ -1,0 +1,25 @@
+
+
+*** Démarrage automatique du programme supervisor.py à la mise sous tension de la raspberry ***
+il faut que le user soit connecté avant de lancer le script, et le lancer dans l'interface écran.
+Passer par le ".bashrc" de l'utilisateur qui est lancé au démarrage de la console.
+
+pi@raspi3-J518:~ $ vi .bashrc
+---------------------------------------------------------------------------------
+# ~/.bashrc: executed by bash(1) for non-login shells.
+# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
+# for examples
+
+...
+
+python3 ~/supervisor/supervisor.py &
+---------------------------------------------------------------------------------
+
+*** Tester le fichier .bashrc sans redémarrer ***
+pi@raspi3-J518:~ $ . ~/.bashrc
+pi@raspi3-J518:~ $ 28-06-2017 20:27:26 - WARNING - Mise sous tension du système supervisor
+Connexion à la base de données en cours
+28-06-2017 20:27:26 - INFO - *** Connexion à la bdd dbsupervis réussie ***
+2017-06-28 20:27:27   Temp =  27.7°C
+2017-06-28 20:27:28   Pres =  997mbar
+2017-06-28 20:27:28   Porte 1-518 ouverte ... contact 1-518 = 1  (OFF)

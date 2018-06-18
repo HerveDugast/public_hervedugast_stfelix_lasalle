@@ -1,0 +1,1 @@
+Pyreverse -o png -p CLogger -A -S -my -f ALL CLogger.py

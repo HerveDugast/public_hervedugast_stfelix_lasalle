@@ -1,0 +1,1 @@
+Pyreverse -o png -p CConnexionMysql -A -S -my -f ALL CConnexionMysql.py

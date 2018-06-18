@@ -1,0 +1,22 @@
+#!wing
+#!version=6.0
+##################################################################
+# Wing IDE project file                                          #
+##################################################################
+[project attributes]
+proj.directory-list = [{'dirloc': loc('ssh://pi_192_168_0_200/prog'),
+                        'excludes': [u'raspiomix_hd.py',
+                                     u'rtcDateHeureFr3.py',
+                                     u'python_path.py'],
+                        'filter': '*',
+                        'include_hidden': False,
+                        'recursive': True,
+                        'watch_for_changes': True},
+                       {'dirloc': loc('ssh://pi_192_168_0_200/supervisor2'),
+                        'excludes': (),
+                        'filter': u'*',
+                        'include_hidden': False,
+                        'recursive': True,
+                        'watch_for_changes': True}]
+proj.file-type = 'shared'
+proj.home-dir = loc('ssh://pi_192_168_0_200/prog')

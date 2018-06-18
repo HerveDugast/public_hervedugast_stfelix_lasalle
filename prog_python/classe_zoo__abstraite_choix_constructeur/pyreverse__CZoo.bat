@@ -1,0 +1,1 @@
+Pyreverse -o png -p CZoo -A -S -my -f ALL CZoo.py

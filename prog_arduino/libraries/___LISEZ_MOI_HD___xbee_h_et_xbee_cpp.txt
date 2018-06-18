@@ -1,0 +1,51 @@
+- Ajout variable membre _checksum dans XBee.h vers ligne 830
+class XBee {
+private:
+   uint8_t _checksum;
+
+
+- Ajout méthode getChecksum dans XBee.h vers ligne 813
+class XBee {
+public:
+   uint8_t getChecksum();
+
+   
+- Ajout de la méthode getChecksum dans XBee.cpp vers ligne 817
+uint8_t XBee::getChecksum() {
+   return _checksum;
+}
+
+
+- Passage des méthodes 	getFrameData et getFrameDataLength de protected en public dans XBee.h vers ligne 1210
+class ZBTxRequest : public PayloadRequest {
+public:
+   uint8_t getFrameData(uint8_t pos);
+   uint8_t getFrameDataLength();
+   
+- passage en commentaire dans XBee.cpp de la ligne  
+uint8_t checksum = 0;
+vers ligne 1529
+//uint8_t checksum = 0;
+
+	
+- remplacement de checksum par _checksum et mise à 0 de  _checksum entre les lignes 1532 et 1544 à peu près
+
+	_checksum = 0;
+	// compute checksum, start at api id
+	_checksum+= request.getApiId();
+	_checksum+= request.getFrameId();
+
+	for (int i = 0; i < request.getFrameDataLength(); i++) {
+		sendByte(request.getFrameData(i), true);
+		_checksum+= request.getFrameData(i);
+	}
+
+	// perform 2s complement
+	_checksum = 0xff - _checksum;
+
+	// send checksum
+	sendByte(_checksum, true);
+
+
+
+

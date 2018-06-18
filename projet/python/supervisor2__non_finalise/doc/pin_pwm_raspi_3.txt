@@ -1,0 +1,25 @@
+Groupe PWM-1
+GPIO18 : pin12    raspiomixplus : IO0
+GPIO12 : pin32    raspiomixplus : non dispo
+
+Groupe PWM-2
+GPIO13 : pin33    raspiomixplus : IO5
+GPIO19 : pin35    raspiomixplus : IO4
+GPIO18
+En fait
+GPIO18 et GPIO12 (pin12 et pin32) : PWM connectés en interne
+GPIO13 et GPIO19 (pin33 et pin35) : PWM connectés en interne
+
+Pour information :
+IO0 = 12 = GPIO18
+IO1 = 11 = GPIO17
+IO2 = 13 = GPIO27
+IO3 = 15 = GPIO22
+ 
+DIP0 = 7 = GPIO4
+DIP1 = 16 = GPIO23
+ 
+IO4 = 35 = GPIO19
+IO5 = 33 = GPIO13
+IO6 = 31 = GPIO6
+IO7 = 29 = GPIO5

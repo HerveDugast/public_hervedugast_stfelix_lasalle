@@ -1,0 +1,1 @@
+Pyreverse -o png -p citroen_ds -A -S -my -f ALL citroen_ds.py

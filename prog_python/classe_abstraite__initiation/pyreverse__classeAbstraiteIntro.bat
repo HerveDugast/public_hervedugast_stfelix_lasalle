@@ -1,0 +1,1 @@
+Pyreverse -o png -p classeAbstraiteIntro -A -S -f ALL classeAbstraiteIntro.py

@@ -1,0 +1,1 @@
+Pyreverse -o png -p CGestionSav -A -S -my -f ALL CGestionSav.py

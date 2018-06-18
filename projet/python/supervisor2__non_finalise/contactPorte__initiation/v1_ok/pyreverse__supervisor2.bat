@@ -1,0 +1,1 @@
+Pyreverse -o png -p supervisor2 -A -S -my -f ALL supervisor2.py

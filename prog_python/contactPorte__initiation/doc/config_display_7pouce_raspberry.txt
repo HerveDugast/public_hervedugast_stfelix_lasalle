@@ -1,0 +1,43 @@
+***** Configuration écran 7 pouces pour raspberry *****
+L'écran 7 pouces tactile fonctionne avec une résolution de 800*480.
+Il est possible de monter la résolution à 1024*614 pour avoir un plus grand espace de travail tout en restant "cliquable" sur l'écran.
+Pour travailler à distance avec VNC, on peut monter la résolution à 1920*1080 pour avoir une zone de travail confortable. Bien sûr, avec cette résolution, l'écran tactile devient difficile à utiliser (zone cliquable trop petite).
+
+
+---------------------------------------------------------
+https://www.raspberrypi.org/forums/viewtopic.php?f=108&t=184762
+
+Need to see more content on your 7in Touch display?
+Sun May 28, 2017 6:47 am
+
+Decided to get an official 7in touch display but instantly figured out that 800x480pixel resolution is a little too low for most of my use cases (my custom 7in is 1280x800pixels: viewtopic.php?f=44&t=158525&hilit=nexus+N2).
+
+Don't know if this has been posted already but you can simple get to see some more content on the official display by changing the frame buffer size in config.txt
+I think that 1024x614 pixel is a good trade off between quality and achievable resolution (see screen capture below).
+
+https://drive.google.com/file/d/0B5lt0BFRhFlDLU9YTDRkb1UyLVk/view?usp=sharing
+
+Code:
+cd /boot
+sudo nano config.txt
+
+and change frame buffer lines to
+Code:
+...
+# uncomment to force a console size. By default it will be display's size minus
+# overscan.
+framebuffer_width=1024
+framebuffer_height=614
+...
+
+...
+reboot and check resolution with
+Code:
+fbset -s
+
+------------------------------------------------------------------
+Si écran à l'envers
+
+éditer le fichier /boot/config.txt et ajouter les lignes suivantes :
+#tourner l'écran de 180 degrés dans le sens des aiguilles d'une montre)
+display_rotate=2 

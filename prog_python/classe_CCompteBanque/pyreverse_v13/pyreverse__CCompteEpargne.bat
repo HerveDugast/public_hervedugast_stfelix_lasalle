@@ -1,0 +1,1 @@
+Pyreverse -o png -p CCompteEpargne -A -S -my -f ALL CCompteEpargne.py

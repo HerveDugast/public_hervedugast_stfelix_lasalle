@@ -1,0 +1,2 @@
+Pour stopper un ou plusieurs threads tournant sur une raspberry, il suffit de redémarrer le shell.
+Pour cela appuyer sur CTRL + F6 ou dans fenêtre Python 3.4.2 Shell, cliquer menu Shell > Restart Shell

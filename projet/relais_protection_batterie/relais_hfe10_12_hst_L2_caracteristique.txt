@@ -1,0 +1,9 @@
+HFE10-1 12-HST-L2
+
+Type : HFE10
+-1 : pas de commutation manuelle
+12 : alimentation bobine 12V
+H : 1 form A
+S : Plastic sealed
+T : AgSnO2
+L2 : Verrou à 2 bobines

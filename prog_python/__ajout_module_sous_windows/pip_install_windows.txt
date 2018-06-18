@@ -1,0 +1,40 @@
+---------- Installation de modules python sous windows ----------
+H. Dugast      07-04-2017        version 1.1
+
+Télécharger get-pip.py
+
+--- Installation de pip, inutile car déjà installé sous python3 ---
+Exécuter dans une invite de commande (cmd.exe) :
+C:\Python34>python.exe D:\xbee\python_module\get-pip.py
+Collecting pip
+  Downloading pip-9.0.1-py2.py3-none-any.whl (1.3MB)
+    100% |################################| 1.3MB 602kB/s
+Collecting wheel
+  Downloading wheel-0.29.0-py2.py3-none-any.whl (66kB)
+    100% |################################| 71kB 1.1MB/s
+Installing collected packages: pip, wheel
+  Found existing installation: pip 1.5.6
+    Uninstalling pip-1.5.6:
+      Successfully uninstalled pip-1.5.6
+Successfully installed pip-9.0.1 wheel-0.29.0
+
+--- Installation d'un module python ---
+Télécharger le module que vous souhaitez installer :
+   Exemple pour l'installation du module pyserial
+      https://pypi.python.org/pypi/pyserial#downloads
+         télécharger pyserial-3.3.tar.gz
+         décompresser avec 7-zip le fichier D:\_temp\pyserial-3.3.tar.gz
+         décompresser avec 7-zip le fichier D:\_temp\dist\pyserial-3.3.tar
+         Installer du module sous windows, à l'aide d'une invite de commande (cmd.exe) :
+         C:\Python34>pip install D:\xbee\python_module\dist\pyserial-3.3
+            Processing d:\xbee\python_module\dist\pyserial-3.3
+            Building wheels for collected packages: pyserial
+              Running setup.py bdist_wheel for pyserial ... done
+              Stored in directory: C:\Users\herve.dugast\AppData\Local\pip\Cache\wheels\9b\2
+            4\db\7558ec425f731853330cf097fb67e867dd0a76e9a6354c297d
+            Successfully built pyserial
+            Installing collected packages: pyserial
+            Successfully installed pyserial-3.3
+
+--- Certains modules python s'installent sous Windows à l'aide d'un exécutable .msi ---
+Exemple : mysql-connector-python-2.1.7-py3.4-windows-x86-64bit.msi

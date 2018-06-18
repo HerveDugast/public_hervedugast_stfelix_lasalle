@@ -1,0 +1,110 @@
+{\rtf1\ansi\deff0\deftab360
+
+{\fonttbl
+{\f000 Courier New;}
+{\f001 Courier New;}
+{\f002 Courier New;}
+{\f003 Courier New;}
+{\f004 Courier New;}
+{\f005 Courier New;}
+{\f006 Courier New;}
+{\f007 Courier New;}
+{\f008 Courier New;}
+{\f009 Courier New;}
+{\f010 Courier New;}
+}
+
+{\colortbl
+\red000\green000\blue000;
+\red255\green255\blue255;
+\red000\green128\blue000;
+\red255\green255\blue255;
+\red255\green000\blue000;
+\red255\green255\blue255;
+\red128\green128\blue128;
+\red255\green255\blue255;
+\red000\green000\blue255;
+\red255\green255\blue255;
+\red255\green128\blue000;
+\red255\green255\blue255;
+\red000\green000\blue000;
+\red255\green255\blue255;
+\red255\green000\blue255;
+\red255\green255\blue255;
+\red000\green000\blue128;
+\red255\green255\blue255;
+\red000\green000\blue000;
+\red255\green255\blue255;
+\red000\green000\blue000;
+\red255\green255\blue255;
+}
+
+\f5505089\fs20\cb21\cf20 \highlight3\cf2 #!/usr/bin/python3.4\highlight1\cf0 \par
+\highlight3\cf2 # coding: utf-8\highlight1\cf0 \par
+\highlight11\cf10 """\par
+Programme (classe) : CZoo.py     version 1.0\par
+Date : 12-03-2018\par
+Auteur : Herv\u233? Dugast\par
+\par
+------- affichage console ------------------------------------------------------\par
+Saisir cat\u233?gorie animal ('CARN' ou 'HERB') ? CARN\par
+Nom animal ? loup\par
+Arme attaque ? machoire\par
+<class 'CCarnivore.CCarnivore'>\par
+LOUP tue avec MACHOIRE pour manger d'autres animaux !\par
+\par
+Saisir cat\u233?gorie animal ('CARN' ou 'HERB') ? HERB\par
+Nom animal ? z\u232?bre\par
+Arme d\u233?fense ? sabots\par
+<class 'CHerbivore.CHerbivore'>\par
+Z\u200?BRE se d\u233?fend avec SABOTS et mange des plantes !\par
+--------------------------------------------------------------------------------\par
+"""\highlight1\cf0 \par
+\highlight9\cf8\b from\highlight1\cf0\b0  \highlight19\cf18 CAnimal\highlight1\cf0  \highlight9\cf8\b import\highlight1\cf0\b0  \highlight19\cf18 CAnimal\highlight1\cf0 \par
+\highlight9\cf8\b from\highlight1\cf0\b0  \highlight19\cf18 CCarnivore\highlight1\cf0  \highlight9\cf8\b import\highlight1\cf0\b0  \highlight19\cf18 CCarnivore\highlight1\cf0 \par
+\highlight3\cf2 # permet d'appeler un constructeur \u224? l'aide de variables\highlight1\cf0 \par
+\highlight9\cf8\b import\highlight1\cf0\b0  \highlight19\cf18 importlib\highlight1\cf0 \par
+\par
+\highlight9\cf8\b class\highlight1\cf0\b0  \highlight13\cf12\b CZoo\highlight17\cf16 :\highlight1\cf0\b0 \par
+   \par
+   \highlight3\cf2 # Attribut statique\highlight1\cf0 \par
+   \highlight3\cf2 # Associe la chaine d'une cat\u233?gorie ("CARN"...) au nom d'un module (CCarnivore.py...) et  \highlight1\cf0 \par
+   \highlight3\cf2 # d'une classe portant le m\u234?me nom (CCarnivore()...)\highlight1\cf0 \par
+   \highlight19\cf18 __categorie\highlight1\cf0  \highlight17\cf16\b =\highlight1\cf0\b0  \highlight17\cf16\b \{\highlight7\cf6\b0 "CARN"\highlight17\cf16\b :\highlight7\cf6\b0 "CCarnivore"\highlight17\cf16\b ,\highlight1\cf0\b0  \highlight7\cf6 "HERB"\highlight17\cf16\b :\highlight7\cf6\b0 "CHerbivore"\highlight17\cf16\b \}\highlight1\cf0\b0 \par
+\par
+   \highlight9\cf8\b def\highlight1\cf0\b0  \highlight15\cf14 __init__\highlight17\cf16\b (\highlight19\cf18\b0 self\highlight17\cf16\b ):\highlight1\cf0\b0 \par
+      \highlight19\cf18 self\highlight17\cf16\b .\highlight19\cf18\b0 __animal\highlight1\cf0  \highlight17\cf16\b =\highlight1\cf0\b0  \highlight17\cf16\b []\highlight1\cf0\b0 \par
+   \par
+   \highlight9\cf8\b def\highlight1\cf0\b0  \highlight15\cf14 creerAnimal\highlight17\cf16\b (\highlight19\cf18\b0 self\highlight17\cf16\b ):\highlight1\cf0\b0 \par
+      \highlight11\cf10 """ Cr\u233?e un animal dans l'une des 2 cat\u233?gories : carnivore ou herbivore\par
+      """\highlight1\cf0 \par
+      \highlight19\cf18 categorieAnimal\highlight1\cf0  \highlight17\cf16\b =\highlight1\cf0\b0  \highlight19\cf18 input\highlight17\cf16\b (\highlight7\cf6\b0 "Saisir cat\u233?gorie animal ('CARN' ou 'HERB') ? "\highlight17\cf16\b )\highlight1\cf0\b0 \par
+      \highlight9\cf8\b for\highlight1\cf0\b0  \highlight19\cf18 cleCat\highlight17\cf16\b ,\highlight1\cf0\b0  \highlight19\cf18 valeurCat\highlight1\cf0  \highlight9\cf8\b in\highlight1\cf0\b0  \highlight19\cf18 CZoo\highlight17\cf16\b .\highlight19\cf18\b0 __categorie\highlight17\cf16\b .\highlight19\cf18\b0 items\highlight17\cf16\b ():\highlight1\cf0\b0 \par
+         \highlight9\cf8\b if\highlight1\cf0\b0  \highlight19\cf18 categorieAnimal\highlight1\cf0  \highlight17\cf16\b ==\highlight1\cf0\b0  \highlight19\cf18 cleCat\highlight17\cf16\b :\highlight1\cf0\b0 \par
+            \highlight3\cf2 # *****  *****\highlight1\cf0 \par
+            \highlight3\cf2 # r\u233?cup\u233?ration nom du module contenant la classe du constructeur \u224? utiliser\highlight1\cf0 \par
+            \highlight3\cf2 # exemple : myModule = "CCarnivore" si categorieAnimal = "CARN"\highlight1\cf0 \par
+            \highlight19\cf18 myModule\highlight1\cf0  \highlight17\cf16\b =\highlight1\cf0\b0  \highlight19\cf18 importlib\highlight17\cf16\b .\highlight19\cf18\b0 import_module\highlight17\cf16\b (\highlight19\cf18\b0 valeurCat\highlight17\cf16\b )\highlight1\cf0\b0 \par
+            \highlight3\cf2 # r\u233?cup\u233?ration nom de la classe d\u233?finie dans le module d\u233?sign\u233?\highlight1\cf0 \par
+            \highlight3\cf2 # exemple : MyClass = CCarnivore si categorieAnimal = "CARN"\highlight1\cf0 \par
+            \highlight19\cf18 MyClass\highlight1\cf0  \highlight17\cf16\b =\highlight1\cf0\b0  \highlight19\cf18 getattr\highlight17\cf16\b (\highlight19\cf18\b0 myModule\highlight17\cf16\b ,\highlight1\cf0\b0  \highlight19\cf18 valeurCat\highlight17\cf16\b )\highlight1\cf0\b0 \par
+            \highlight3\cf2 # cr\u233?e un animal avec la classe pr\u233?c\u233?demment trouv\u233?e\highlight1\cf0 \par
+            \highlight19\cf18 animal\highlight1\cf0  \highlight17\cf16\b =\highlight1\cf0\b0  \highlight19\cf18 MyClass\highlight17\cf16\b ()\highlight1\cf0\b0 \par
+            \highlight19\cf18 self\highlight17\cf16\b .\highlight19\cf18\b0 __animal\highlight17\cf16\b .\highlight19\cf18\b0 append\highlight17\cf16\b (\highlight19\cf18\b0 animal\highlight17\cf16\b )\highlight1\cf0\b0 \par
+   \par
+   \highlight9\cf8\b def\highlight1\cf0\b0  \highlight15\cf14 get_animal\highlight17\cf16\b (\highlight19\cf18\b0 self\highlight17\cf16\b ,\highlight1\cf0\b0  \highlight19\cf18 num\highlight17\cf16\b ):\highlight1\cf0\b0 \par
+      \highlight9\cf8\b return\highlight1\cf0\b0  \highlight19\cf18 self\highlight17\cf16\b .\highlight19\cf18\b0 __animal\highlight17\cf16\b [\highlight19\cf18\b0 num\highlight17\cf16\b ]\highlight1\cf0\b0 \par
+            \par
+\highlight9\cf8\b if\highlight1\cf0\b0  \highlight19\cf18 __name__\highlight1\cf0  \highlight17\cf16\b ==\highlight1\cf0\b0  \highlight7\cf6 "__main__"\highlight17\cf16\b :\highlight1\cf0\b0 \par
+   \highlight19\cf18 zoo\highlight1\cf0  \highlight17\cf16\b =\highlight1\cf0\b0  \highlight19\cf18 CZoo\highlight17\cf16\b ()\highlight1\cf0\b0 \par
+   \par
+   \highlight19\cf18 zoo\highlight17\cf16\b .\highlight19\cf18\b0 creerAnimal\highlight17\cf16\b ()\highlight1\cf0\b0  \highlight3\cf2 # CARN, loup, machoire\highlight1\cf0 \par
+   \highlight9\cf8\b print\highlight17\cf16 (\highlight19\cf18\b0 type\highlight17\cf16\b (\highlight19\cf18\b0 zoo\highlight17\cf16\b .\highlight19\cf18\b0 get_animal\highlight17\cf16\b (\highlight5\cf4\b0 0\highlight17\cf16\b )))\highlight1\cf0\b0 \par
+   \highlight19\cf18 zoo\highlight17\cf16\b .\highlight19\cf18\b0 get_animal\highlight17\cf16\b (\highlight5\cf4\b0 0\highlight17\cf16\b ).\highlight19\cf18\b0 manger\highlight17\cf16\b ()\highlight1\cf0\b0  \highlight17\cf16\b ;\highlight1\cf0\b0  \highlight9\cf8\b print\highlight17\cf16 (\highlight7\cf6\b0 ""\highlight17\cf16\b )\highlight1\cf0\b0 \par
+   \par
+   \highlight19\cf18 zoo\highlight17\cf16\b .\highlight19\cf18\b0 creerAnimal\highlight17\cf16\b ()\highlight1\cf0\b0  \highlight3\cf2 # HERB, z\u232?bre, sabots\highlight1\cf0 \par
+   \highlight9\cf8\b print\highlight17\cf16 (\highlight19\cf18\b0 type\highlight17\cf16\b (\highlight19\cf18\b0 zoo\highlight17\cf16\b .\highlight19\cf18\b0 get_animal\highlight17\cf16\b (\highlight5\cf4\b0 1\highlight17\cf16\b )))\highlight1\cf0\b0 \par
+   \highlight19\cf18 zoo\highlight17\cf16\b .\highlight19\cf18\b0 get_animal\highlight17\cf16\b (\highlight5\cf4\b0 1\highlight17\cf16\b ).\highlight19\cf18\b0 manger\highlight17\cf16\b ()\highlight1\cf0\b0 \par
+      \par
+      \par
+}

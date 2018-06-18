@@ -1,0 +1,1 @@
+Pyreverse -o png -p CAnimal -A -S -my -f ALL CAnimal.py

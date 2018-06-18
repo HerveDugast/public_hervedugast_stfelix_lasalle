@@ -1,0 +1,3 @@
+2018-04-05 08:05:11,506 -- debug_log -- DEBUG -- message debug n°5 -- logger2.envoyerMessageBoucle()
+2018-04-05 08:05:12,131 -- debug_log -- DEBUG -- message debug n°6 -- logger2.envoyerMessageBoucle()
+2018-04-05 08:05:12,741 -- debug_log -- DEBUG -- message debug n°7 -- logger2.envoyerMessageBoucle()

@@ -1,0 +1,7 @@
+2018-06-12 22:18:06,101 -- INFO -- Thread thContactPorte. Lancement -- ThreadContactPorte.run()
+2018-06-12 22:18:06,240 -- INFO -- Thread thContactPorte. Door : Unknown -- ThreadContactPorte.definirEtatPorte(...)
+2018-06-12 22:18:06,340 -- INFO -- Thread thContactPorte. Door : Close -- ThreadContactPorte.definirEtatPorte(...)
+2018-06-12 22:18:09,240 -- INFO -- Thread thContactPorte. Door : Open -- ThreadContactPorte.definirEtatPorte(...)
+2018-06-12 22:18:10,941 -- INFO -- Thread thContactPorte. Door : Close -- ThreadContactPorte.definirEtatPorte(...)
+2018-06-12 22:18:12,141 -- INFO -- Thread thContactPorte. Door : Open -- ThreadContactPorte.definirEtatPorte(...)
+2018-06-12 22:18:13,241 -- INFO -- Thread thContactPorte. Door : Close -- ThreadContactPorte.definirEtatPorte(...)
