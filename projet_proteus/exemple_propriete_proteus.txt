@@ -1,0 +1,58 @@
+---- ISIS  Propriétés CA3140 (Editer Bloc Script) ----
+{*DEVICE}
+NAME=CA3140
+PREFIX=U
+{*PROPDEFS}
+MODFILE=LISA Model File,STRING
+PACKAGE=PCB Package,PACKAGE,0
+{*INDEX}
+{CAT=Operational Amplifiers}
+SUBCAT=Single
+{DESC=4.5MHz, BiMOS Operational Amplifier with MOSFET Input, Bipolar Output}
+{*COMPONENT}
+{MODFILE=OA_MFET}
+{PACKAGE=DIL08-HD}
+
+---- ARES  Propriétés CA3140 (Editer Bloc Script) ----
+{*PACKAGE}
+NAME=DIL08-HD
+{*INDEX}
+{CAT=Integrated Circuits}
+{TYPE=Through Hole}
+{SUBCAT=}
+{*VIEW3D}
+
+---- ISIS  Propriétés Bornier à vis 2 bornes (Editer Bloc Script) ----
+{*DEVICE}
+NAME=BORNIER_VIS_2P
+{PREFIX=J}
+{*PROPDEFS}
+{PACKAGE="PCB Package",PACKAGE,1,BORNIER_VIS_2P}
+{*INDEX}
+{CAT=Connectors}
+{SUBCAT=Terminal Blocks}
+{DESC=Bornier à vis, 2 bornes}
+{*COMPONENT}
+{PACKAGE=BORNIER_VIS_2P}
+*PINOUT BORNIER_VIS_2P
+{ELEMENTS=1}
+{PIN "1" = 1}
+{PIN "2" = 2}
+
+---- ARES  Propriétés Bornier à vis 2 bornes (Editer Bloc Script) ----
+{*PACKAGE}
+NAME=BORNIER_VIS_2P
+{*INDEX}
+{TYPE=Through Hole}
+{CAT=Connectors}
+{SUBCAT=Terminal Blocks}
+{DESC=Bornier à vis, 2 bornes}
+{*VIEW3D}
+
+Catégorie
+Miscellaneous
+
+
+
+Sous cat
+Preset potentiometers

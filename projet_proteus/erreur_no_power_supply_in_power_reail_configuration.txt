@@ -1,0 +1,18 @@
+Si vous avez une erreur de ce type lors de la génération de la netlist :
+"No power supply specified for net UBAT in Power Rail Configuration."
+
+Dans Isis, menu Projet - Configurer les rails d'alimentation...
+   Onglet Rails alimentation
+      Nouveau - UBAT
+         Tension - 14V
+            OK
+   ...
+
+En résumé pour le projet interfaceCapteur
+
+Liens d'alimentation       Liens connectés
+12V (tension : 12V)        12V
+GND (tension : 0V)         GND
+UBAT (tension : 14V)       UBAT
+VCC/VDD (tension : 5V)     VCC, 5V
+VEE (tension : -5V)        -
