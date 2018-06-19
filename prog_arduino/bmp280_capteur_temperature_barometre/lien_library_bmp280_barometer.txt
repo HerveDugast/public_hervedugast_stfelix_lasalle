@@ -1,0 +1,5 @@
+library adafruit
+
+https://github.com/adafruit/Adafruit_BMP280_Library/archive/master.zip
+
+https://learn.adafruit.com/adafruit-bmp280-barometric-pressure-plus-temperature-sensor-breakout/wiring-and-test

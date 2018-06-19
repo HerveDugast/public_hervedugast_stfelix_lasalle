@@ -1,0 +1,2 @@
+La mesure de la température et de la pression atmosphérique sont correctes.
+En revanche, la valeur retournée pour l'altitude est erronée. elle devrait être aux alentours de 27 mètres.
